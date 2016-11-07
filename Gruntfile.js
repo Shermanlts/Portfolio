@@ -4,26 +4,25 @@ grunt.initConfig({
         options: {
           engine: 'gm',
           sizes: [{
-            /* Change these */
             width: 1600,
             suffix: '_large_2x',
             quality: 30
           },
           {
-            /* Change these */
             width: 800,
             suffix: '_med_1x',
+            quality: 30
+          },
+          {
+            width: 400,
+            suffic: '_small_',
             quality: 30
           }]
         },
 
-        /*
-        You don't need to change this part if you don't change
-        the directory structure.
-        */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png}'],
+          src: ['*.{gif,jpg}'],
           cwd: 'images_src/',
           dest: 'images/'
         }]
