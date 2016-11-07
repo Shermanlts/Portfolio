@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio final for Udacity FND",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shermanlts/Portfolio.git"
+  },
+  "author": "Rob Sherman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shermanlts/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Shermanlts/Portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-responsive-images": "^0.1.9"
+  }
+}
