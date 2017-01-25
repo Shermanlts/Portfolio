@@ -1,7 +1,6 @@
 * {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
-	text-align: center;
 }
 [class*="col-"] {
 	width: 100%;
@@ -9,6 +8,11 @@
 .row {
 	max-width: 1200px;
 	align-items: center;
+}
+@media only screeen and (max-width: 499px) {
+	.header__inner {
+		
+	}
 }
 @media only screen and (min-width: 500px) {
     /* For tablets: */
@@ -28,8 +32,10 @@
     	display: flex;
     	max-width: 1200px;
     }
-    .header__content {
-    	column-width: calc(100%-100px);
+    .header__content, .header__text {
+    	text-align: right;
+    	width: calc(100% - 100px);
+    	margin-left: 0px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -47,16 +53,25 @@
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
     .row-flex {display: flex;}
-    .header__title .header__text {
+    .header__title, .header__text {
     	text-align: right;
     	max-width: 1200px;
+    	margin-left: 0px;
     }
     .header__content {
-    	column-width: calc(100%-100px);
+    	width: calc(100% - 100px);
     }
 }
 img, embed, object, video {
 	max-width: 100%;
+}
+img: last-of-type {
+	margin-right: 0px;
+}
+.header {
+	max-width: 1200px;
+	margin: auto;
+	align-items: center;
 }
 .header__inner {
 	margin-top: 10px;
@@ -67,11 +82,37 @@ img, embed, object, video {
 }
 .header__title {
 	color: #2d3c49;
-	font-size: 2em;
+	font-size: 3em;
+	margin-bottom: 4px;
+}
+.header__text {
+	margin-top: 0px;
+	color: #2d3c49;
 }
 .header__line {
 	border-width: 2px;
 	margin-bottom: 20PX;
 	border-style: solid;
 	color: #7d97ad;
+}
+.main__title {
+	font-size: 1.8em;
+	color: #7d97ad;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 2px;
+}
+h4 {
+	margin-top: 2px;
+	word-wrap: break-word;
+}
+.main__section {
+	width: calc((100% - 20px)/3);
+	margin-right: 10px;
+	margin-left: 0px;
+}
+.main__examples {
+	align-items: center;
 }
