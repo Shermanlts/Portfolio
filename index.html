@@ -28,14 +28,14 @@
 </header>
 <main>
 	<div class="main__body">
-		<img class="body__photo col-m-12 col-12 row" src=images/SPYintro-1200.jpg srcset="images/SPYintro-400.jpg 400w, images/SPYintro-800.jpg 800w, images/SPYintro-1200.jpg 1200w" alt="photo of code snippet over museum exhibit">
+		<img class="body__photo col-m-12 col-12 row" src=images/SPYintro-1200.jpg srcset="images/SPYintro-400.jpg 400w, images/SPYintro-800.jpg 800w, images/SPYintro-1200.jpg 1200w" sizes="100vw" alt="photo of code snippet over museum exhibit">
 		<div class="main__featured">
 			<h2 class="main__title">
 				Featured Work
 			</h2>
 			<div class="main__examples row-flex">
 				<div class="main__section">
-					<img class="main__photo1" src=images/DBlight-800.jpg srcset="images/DBlight-800.jpg 800w, images/DBlight-400.jpg 400w" alt="photo of live concer lighting with audience and operator">
+					<img class="main__photo1" src=images/DBlight-800.jpg srcset="images/DBlight-800.jpg 800w, images/DBlight-400.jpg 400w" sizes="(max-width: 499) 100vw, 25vw" alt="photo of live concer lighting with audience and operator">
 					<h3>
 						CONCERTS
 					</h3>
@@ -46,7 +46,7 @@
 					</h4>
 				</div>
 				<div class="main__section">
-					<img class="main__photo2" src=images/SHshow-800.jpg srcset="images/SHshow-800.jpg 800w, images/SHshow-400.jpg 400w" alt="photo of concert setup at Seahawks stadium">
+					<img class="main__photo2" src=images/SHshow-800.jpg srcset="images/SHshow-800.jpg 800w, images/SHshow-400.jpg 400w" sizes="(max-width: 499) 100vw, 25vw" alt="photo of concert setup at Seahawks stadium">
 					<h3>
 						Exhibit/Events
 					</h3>
@@ -57,7 +57,7 @@
 					</h4>
 				</div>
 				<div class="main__section">
-					<img class="main__photo3" src=images/SLlaser-800.jpg srcset="images/SLlaser-800.jpg 800w, images/SLlaser-400.jpg 400w"  alt="photo of performer in front of laser in theater show">
+					<img class="main__photo3" src=images/SLlaser-800.jpg srcset="images/SLlaser-800.jpg 800w, images/SLlaser-400.jpg 400w" sizes="(max-width: 499) 100vw, 25vw" alt="photo of performer in front of laser in theater show">
 					<h3>
 						Theater
 					</h3>
@@ -69,8 +69,38 @@
 				</div>
 				</div>
 			</div>
+		<button id="myBtn">More info</button>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>This project was created as part of the Udacity Fullstack developer program.  For more information visit:
+				<a href="http://www.udacity.com">Udacity website</a></p>
+			</div>
 		</div>
 	</div>
 </main>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
+</html>
 
